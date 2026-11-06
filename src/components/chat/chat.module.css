@@ -1,0 +1,91 @@
+.chat {
+  max-width: 700px;
+  max-height:500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.messages {
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 20px;
+
+}
+
+.userMessage {
+  align-self: flex-end;
+  background-color: rgb(219, 199, 202);
+  padding: 12px 16px;
+  border-radius: 18px 18px 4px 18px;
+  max-width: 75%;
+  color: black;
+}
+
+.aiMessage {
+  align-self: flex-start;
+  background-color: rgb(148, 167, 121);
+  padding: 12px 16px;
+  border-radius: 18px 18px 18px 4px;
+  max-width: 75%;
+  color:black
+}
+
+.userMessage p{
+  margin: 0 0 8px;
+  white-space: pre-wrap;
+}
+.aiMessage p {
+  margin: 0 0 8px;
+  white-space: pre-wrap;
+}
+
+.aiMessage small {
+  color: #666;
+  font-size: 11px;
+}
+
+.inputArea {
+  display: flex;
+  gap: 10px;
+}
+
+.inputArea input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+.inputArea input:hover{
+  border: 1px solid pink;
+}
+
+.inputArea button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: static;
+}
+.inputArea button:hover{
+  color:black;
+  background-color: #ccc;
+}
+.loading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.loading span {
+  width: 15px;
+  height: 15px;
+  border: 3px solid #ddd;
+  border-top-color: #333;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
